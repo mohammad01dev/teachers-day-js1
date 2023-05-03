@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+div {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    color: white;
+    font-size: 5em;
+    top: 0;
+}
+.coloring {
+    color: royalblue;
+    animation: coloring 1s infinite;
+}
+@keyframes coloring {
+    0% {
+        color: rgb(225, 65, 65);
+        text-shadow: 0 0 20px rgb(225, 65, 65);
+    }
+    25% {
+        color: rebeccapurple;
+        text-shadow: 0 0 20px rebeccapurple;
+    }
+    50% {
+        color: cadetblue;
+        text-shadow: 0 0 20px cadetblue;
+    }
+    75% {
+        color: orangered;
+        text-shadow: 0 0 20px orangered;
+    }
+    100% {
+        color: rosybrown;
+        text-shadow: 0 0 20px rosybrown;
+    }
+}
+.letter-letter {
+    top: 300px;
+    align-items: flex-start;
+    letter-spacing: 15px;
+}
+span {
+    color: rgb(31, 27, 27);
+    animation: glowing 2.25s infinite;
+}
+
+span:nth-child(1) {
+    animation-delay: 0s;
+}
+span:nth-child(2) {
+    animation-delay: 0.24s;
+}
+span:nth-child(3) {
+    animation-delay: 0.50s;
+}
+span:nth-child(4) {
+    animation-delay: 0.75s;
+}
+span:nth-child(5) {
+    animation-delay: 1s;
+}
+span:nth-child(6) {
+    animation-delay: 1.25s;
+}
+span:nth-child(7) {
+    animation-delay: 1.50s;
+}
+span:nth-child(8) {
+    animation-delay: 1.75s;
+}
+span:nth-child(9) {
+    animation-delay: 2s;
+}
+span:nth-child(10) {
+    animation-delay: 2.24s;
+}
+@keyframes glowing {
+    0%,
+    100% {
+        color: white;
+        text-shadow: 0 0 20px royalblue,
+        0 0 40px royalblue,
+        0 0 60px royalblue;
+    }
+    5%,
+    95% {
+        color: rgb(31, 27, 27);
+        text-shadow: none;
+    }
+}
